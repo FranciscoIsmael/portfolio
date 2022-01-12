@@ -41,6 +41,9 @@
         color: #362417;
       }
     </style>
+    <!-- script para enviar un correo
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contacto.js"></script> -->
 </head>
 <body>
 
@@ -64,13 +67,19 @@
       <li class="nav-item">
         <a class="nav-link" href="skills.html">Skills</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacto" style="position:absolute; right:20px; font-weight: bold; color: black;">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/ismael-martinez-aa239420b" style="position:absolute; right:100px; font-weight: bold; color: black;">Linkedin</a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <div style="padding-top: 100px; padding-left: 50px" >
     
-    <img class="imagen-perfil rounded float-left " src="imagenes/placeholder.png" style="margin-left: 450px;">
+    <img class="imagen-perfil rounded float-left " src="imagenes/imagen_portfolio.svg" style="margin-left: 450px; width: 600px;">
     <div>
       <p style="margin-left: 900px; margin-top: 60px;">Francisco Ismael Martínez Alonso</p>
       <p style="margin-left: 900px">Estudiante de DAM (Desarrollo de aplicaciones multiplataforma)</p>
@@ -84,16 +93,36 @@
         
     </p>
     <p>
-      Me gustan los retos y aspiro a ser fullstack aunque me gustaria especializarme en desarrollo de aplicaciones para movil pero no descarto otros trabajos relacionados con programar.
+      Me gustan los retos y aspiro a ser full stack aunque me gustaria especializarme en desarrollo de aplicaciones para movil pero no descarto otros trabajos relacionados con programar.
     </p>
     
 </div>
 <div style=" padding: 50px; margin-left: 450px;">
   <p>Contacto:</p>
-  <a href="www.twitter.com">Twitter</a></br>
-  <a href="www.twitter.com">Instagram</a></br>
-  <a href="www.twitter.com">Linkedin</a>
-  <p>Telefono: +34 12346789</p>
+
+  <!-- Formulario de contacto -->
+  <form action="https://formsubmit.co/ismael.martinez@escuelaestech.es" method="POST" id="contacto">
+
+    <div class="form-group">
+
+      <input type="email" name="email" placeholder="Email adress" required>
+      <input type="hidden" name="_next" value="thanks.html">
+      <input type="hidden" name="_subject" value="Email enviado desde el portfolio">
+      <input type="text" name="message" placeholder="Escribe lo que quieras" required>
+      
+      
+    </div>
+    <!-- <textarea name="textarea" rows="10" cols="50" placeholder="Escríbeme algo."></textarea></br> -->
+
+    <button type="submit" class="btn btn-primary">Enviar</button></br>
+
+  </form>
+
+  
+  <!-- <a href="www.twitter.com">Twitter</a></br>
+  <a href="www.twitter.com">Instagram</a></br> -->
+  <a href="https://www.linkedin.com/in/ismael-martinez-aa239420b">Linkedin</a>
+  <!-- <p>Telefono: +34 12346789</p> -->
 </div>
 
     
